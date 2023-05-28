@@ -103,4 +103,3 @@ searchForm.addEventListener('submit', async (event) => {
 
 
 
-
