@@ -53,14 +53,12 @@ card.appendChild(details);
 
 //download button
 const downloadButton = document.createElement('button');
-  downloadButton.textContent = 'Download PDF';
-  downloadButton.addEventListener('click', async () => {
-   const fileName = `${card.dataset.title} ${card.dataset.author} doctype:pdf`;
-   const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(fileName)}&num=1`;
+downloadButton.textContent = 'Download PDF';
+downloadButton.addEventListener('click', async () => {
+  const fileName = `${card.dataset.title} ${card.dataset.author} doctype:pdf`;
+  const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(fileName)}&btnI=1`;
   window.open(searchUrl, '_blank');
-
-
-    });
+});
   
 
 
@@ -100,6 +98,3 @@ searchForm.addEventListener('submit', async (event) => {
     });
   }
 });
-
-
-
